@@ -5,9 +5,9 @@
     <classes>
       <class name="tests.LoginTests">
         <methods>
-          <include name="visitsTheLoginPage"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
+          <include name="login"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>

@@ -44,4 +44,14 @@ public class LoginTests extends BasicTest {
 		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/login", "You are not on log in page");
 		softAssert.assertAll();
 	}
+	@Test(priority = 5)
+	public void login() {
+		navPage.getLogInButton().click();
+		loginPage.getEmailField().sendKeys("admin@admin.com");
+		loginPage.getPasswordField().sendKeys("12345");
+		loginPage.getLoginButton().click();
+		loginPage.waitForHomePageToBeVisible();
+		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/home", "You are not on home page");
+		softAssert.assertAll();
+	}
 }
