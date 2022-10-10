@@ -5,9 +5,9 @@
     <classes>
       <class name="tests.SignupTests">
         <methods>
-          <include name="checksInputTypes"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
+          <include name="displaysErrorsWhenUserAlreadyExists"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>
