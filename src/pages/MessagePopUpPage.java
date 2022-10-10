@@ -29,10 +29,10 @@ public class MessagePopUpPage {
 	}
 	public void waitVerifyYourAccountDialogToBeVisible() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class, 'v-card__actions')]")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Close']")));
 	}
 	public WebElement getVerifyYourAccountText() {
-		return driver.findElement(By.xpath("//*[contains(@class, 'dlgVerifyAccount')]"));
+		return driver.findElement(By.xpath("//*[contains(@class, 'v-snack__content')]/ul/li"));
 	}
 	public WebElement getCloseButton(){
 		return driver.findElement(By.xpath("//*[text()='Close']"));
