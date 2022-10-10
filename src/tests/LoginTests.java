@@ -33,5 +33,15 @@ public class LoginTests extends BasicTest {
 		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/login", "You are not on log in page");
 		softAssert.assertAll();
 	}
-	
+	@Test(priority = 4)
+	public void displaysErrorsWhenPasswordIsWrong() {
+		navPage.getLogInButton().click();
+		loginPage.getEmailField().sendKeys("admin@admin.com");
+		loginPage.getPasswordField().sendKeys("password123");
+		loginPage.getLoginButton().click();
+		messagePopUpPage.waitForPopUpCreateBeVisible();
+		softAssert.assertTrue(messagePopUpPage.getElementsThatContainText().getText().contains("Wrong password"));
+		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/login", "You are not on log in page");
+		softAssert.assertAll();
+	}
 }
