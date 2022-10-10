@@ -29,7 +29,8 @@ public class LoginTests extends BasicTest {
 		loginPage.getPasswordField().sendKeys("password123");
 		loginPage.getLoginButton().click();
 		messagePopUpPage.waitForPopUpCreateBeVisible();
-		softAssert.assertTrue(messagePopUpPage.getElementsThatContainText().getText().contains("User does not exists"));
+		softAssert.assertTrue(messagePopUpPage.getElementsThatContainText().getText().contains("User does not exists"), 
+				"Pop up message is not visible");
 		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/login", "You are not on log in page");
 		softAssert.assertAll();
 	}
@@ -40,7 +41,8 @@ public class LoginTests extends BasicTest {
 		loginPage.getPasswordField().sendKeys("password123");
 		loginPage.getLoginButton().click();
 		messagePopUpPage.waitForPopUpCreateBeVisible();
-		softAssert.assertTrue(messagePopUpPage.getElementsThatContainText().getText().contains("Wrong password"));
+		softAssert.assertTrue(messagePopUpPage.getElementsThatContainText().getText().contains("Wrong password"), 
+				"Pop up message is not visible");
 		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/login", "You are not on log in page");
 		softAssert.assertAll();
 	}
@@ -53,5 +55,11 @@ public class LoginTests extends BasicTest {
 		loginPage.waitForHomePageToBeVisible();
 		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/home", "You are not on home page");
 		softAssert.assertAll();
+	}
+	@Test(priority = 6)
+	public void logout() {
+		softAssert.assertTrue(navPage.getLogOutButton().isDisplayed(), "Log out button is visible");
+		navPage.getLogOutButton().click();
+		
 	}
 }
