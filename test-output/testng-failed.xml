@@ -6,8 +6,8 @@
       <class name="tests.SignupTests">
         <methods>
           <include name="beforeMethod"/>
+          <include name="signup"/>
           <include name="beforeClass"/>
-          <include name="displaysErrorsWhenUserAlreadyExists"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>
