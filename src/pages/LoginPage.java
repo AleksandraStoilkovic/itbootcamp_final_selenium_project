@@ -17,7 +17,7 @@ public class LoginPage {
 	public WebElement getEmailField() {
 		return driver.findElement(By.id("email"));
 	}
-	public WebElement getUsernameField() {
+	public WebElement getPasswordField() {
 		return driver.findElement(By.name("password"));
 	}
 	public WebElement getLoginButton() {
