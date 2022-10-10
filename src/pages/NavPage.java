@@ -52,15 +52,15 @@ public class NavPage {
 		return driver.findElement(By.xpath("//*[text()=' en ']"));
 	}
 	public WebElement getENButton() {
-		return driver.findElement(By.id("list-item-203"));
+		return driver.findElement(By.xpath("//*[text()='EN']"));
 	}
 	public WebElement getESButton() {
-		return driver.findElement(By.id("list-item-205"));
+		return driver.findElement(By.xpath("//*[text()='ES']"));
 	}
 	public WebElement getFRButton() {
-		return driver.findElement(By.id("list-item-207"));
+		return driver.findElement(By.xpath("//*[text()='FR']"));
 	}
 	public WebElement getCNButton() {
-		return driver.findElement(By.id("list-item-209"));
+		return driver.findElement(By.xpath("//*[text()='CN']"));
 	}
 }
