@@ -5,10 +5,10 @@
     <classes>
       <class name="tests.AdminCitiesTests">
         <methods>
+          <include name="createNewCity"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
-          <include name="checksInputTypesForCreateOrEditNewCity"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- tests.AdminCitiesTests -->

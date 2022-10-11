@@ -24,4 +24,17 @@ public class AdminCitiesTests extends BasicTest {
 		softAssert.assertEquals(citiesPage.getNameInput().getAttribute("type"), "text", "Type of name field should be text");
 		softAssert.assertAll();
 	}
+	@Test(priority = 3)
+	public void createNewCity() {
+		navPage.getAdminButton().click();
+		navPage.getCitiesLink().click();
+		citiesPage.getNewItemButton().click();
+		citiesPage.waitForDialogForEditAndCreateBeVisible();
+		citiesPage.getNameInput().sendKeys("Aleksandra Stoilkovic’s city");
+		citiesPage.getSaveButton().click();
+		messagePopUpPage.waitForPopUpCreateBeVisible();
+		softAssert.assertTrue(messagePopUpPage.getElementsThatContainTextWhenWeSaveNewCity().getText().contains("Saved successfully"), 
+				"Message Pop Up should contain text Saved sucessfully");
+
+	}
 }

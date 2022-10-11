@@ -1,41 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6535" started-at="2022-10-11T18:18:58 CEST" finished-at="2022-10-11T18:19:05 CEST">
+  <suite name="Default suite" duration-ms="8111" started-at="2022-10-11T18:36:11 CEST" finished-at="2022-10-11T18:36:19 CEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6535" started-at="2022-10-11T18:18:58 CEST" finished-at="2022-10-11T18:19:05 CEST">
+    <test name="Default test" duration-ms="8111" started-at="2022-10-11T18:36:11 CEST" finished-at="2022-10-11T18:36:19 CEST">
       <class name="tests.AdminCitiesTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="beforeClass" is-config="true" duration-ms="2440" started-at="2022-10-11T18:18:58 CEST" finished-at="2022-10-11T18:19:00 CEST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="beforeClass" is-config="true" duration-ms="2555" started-at="2022-10-11T18:36:11 CEST" finished-at="2022-10-11T18:36:13 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="beforeMethod" is-config="true" duration-ms="1020" started-at="2022-10-11T18:19:01 CEST" finished-at="2022-10-11T18:19:02 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="beforeMethod" is-config="true" duration-ms="904" started-at="2022-10-11T18:36:13 CEST" finished-at="2022-10-11T18:36:14 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="visitsTheAdminCitiesPageAndListCities()[pri:1, instance:tests.AdminCitiesTests@43bd930a]" name="visitsTheAdminCitiesPageAndListCities" duration-ms="1079" started-at="2022-10-11T18:19:02 CEST" finished-at="2022-10-11T18:19:03 CEST">
+        <test-method status="PASS" signature="visitsTheAdminCitiesPageAndListCities()[pri:1, instance:tests.AdminCitiesTests@43bd930a]" name="visitsTheAdminCitiesPageAndListCities" duration-ms="1263" started-at="2022-10-11T18:36:14 CEST" finished-at="2022-10-11T18:36:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- visitsTheAdminCitiesPageAndListCities -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-11T18:19:03 CEST" finished-at="2022-10-11T18:19:03 CEST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-11T18:36:16 CEST" finished-at="2022-10-11T18:36:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="beforeMethod" is-config="true" duration-ms="287" started-at="2022-10-11T18:19:03 CEST" finished-at="2022-10-11T18:19:03 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="beforeMethod" is-config="true" duration-ms="309" started-at="2022-10-11T18:36:16 CEST" finished-at="2022-10-11T18:36:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checksInputTypesForCreateOrEditNewCity()[pri:2, instance:tests.AdminCitiesTests@43bd930a]" name="checksInputTypesForCreateOrEditNewCity" duration-ms="954" started-at="2022-10-11T18:19:03 CEST" finished-at="2022-10-11T18:19:04 CEST">
+        <test-method status="PASS" signature="checksInputTypesForCreateOrEditNewCity()[pri:2, instance:tests.AdminCitiesTests@43bd930a]" name="checksInputTypesForCreateOrEditNewCity" duration-ms="444" started-at="2022-10-11T18:36:16 CEST" finished-at="2022-10-11T18:36:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checksInputTypesForCreateOrEditNewCity -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-11T18:19:04 CEST" finished-at="2022-10-11T18:19:04 CEST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-11T18:36:16 CEST" finished-at="2022-10-11T18:36:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="afterClass" is-config="true" duration-ms="718" started-at="2022-10-11T18:19:04 CEST" finished-at="2022-10-11T18:19:05 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="beforeMethod" is-config="true" duration-ms="235" started-at="2022-10-11T18:36:16 CEST" finished-at="2022-10-11T18:36:17 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="createNewCity()[pri:3, instance:tests.AdminCitiesTests@43bd930a]" name="createNewCity" duration-ms="1648" started-at="2022-10-11T18:36:17 CEST" finished-at="2022-10-11T18:36:18 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewCity -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-11T18:36:18 CEST" finished-at="2022-10-11T18:36:18 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.AdminCitiesTests@43bd930a]" name="afterClass" is-config="true" duration-ms="715" started-at="2022-10-11T18:36:18 CEST" finished-at="2022-10-11T18:36:19 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
