@@ -10,5 +10,11 @@ public class LocalTests extends BasicTest{
 		softAssert.assertEquals(navPage.getHeaderText().getText(), "Página de aterrizaje", "Language is not set to ES");
 		softAssert.assertAll();
 	}
-
+	@Test(priority = 2)
+	public void setLocaleToEN() {
+		navPage.getLanguageButton().click();
+		navPage.getENButton().click();
+		softAssert.assertEquals(navPage.getHeaderText().getText(), "Landing", "Language is not set to EN");
+		softAssert.assertAll();
+}
 }

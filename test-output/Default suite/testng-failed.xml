@@ -5,8 +5,8 @@
     <classes>
       <class name="tests.LocalTests">
         <methods>
-          <include name="setLocaleToES"/>
           <include name="beforeMethod"/>
+          <include name="setLocaleToEN"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
