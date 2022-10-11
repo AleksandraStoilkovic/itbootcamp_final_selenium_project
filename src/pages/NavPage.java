@@ -63,4 +63,7 @@ public class NavPage {
 	public WebElement getCNButton() {
 		return driver.findElement(By.xpath("//*[text()='CN']"));
 	}
+	public WebElement getHeaderText() {
+		return driver.findElement(By.tagName("h1"));
+	}
 }
