@@ -24,6 +24,9 @@ public class MessagePopUpPage {
 	public WebElement getElementsThatContainText(){
 		return driver.findElement(By.xpath("//*[contains(@class, 'v-snack__content')]/ul/li"));
 	}
+	public WebElement getElementsThatContainTextWhenWeSaveNewCity(){
+		return driver.findElement(By.xpath("//*[contains(@class, 'v-snack__content')]"));
+	}
 	public WebElement getCancelButton(){
 		return driver.findElement(By.xpath("//*[contains(@class, 'v-snack__content')]/button"));
 	}
