@@ -29,11 +29,11 @@ public class NavPage {
 	}
 
 	public WebElement getCitiesLink() {
-		return driver.findElement(By.id("list-item-346"));
+		return driver.findElement(By.xpath("//*[contains(@class, 'btnAdminCities')]"));
 	}
-
+	
 	public WebElement getUsersLink() {
-		return driver.findElement(By.id("list-item-349"));
+		return driver.findElement(By.xpath("//*[contains(@class, 'btnAdminUsers')]"));
 	}
 
 	public WebElement getSignUpButton() {
