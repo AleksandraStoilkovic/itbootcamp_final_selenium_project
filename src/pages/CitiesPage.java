@@ -25,6 +25,9 @@ public class CitiesPage {
 	public WebElement getSearchInput() {
 		return driver.findElement(By.id("search"));
 	}
+	public WebElement getNameInput() {
+		return driver.findElement(By.id("name"));
+	}
 
 	public void waitForDialogForEditAndCreateBeVisible() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
