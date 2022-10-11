@@ -7,8 +7,8 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
-          <include name="visitsTheAdminCitiesPageAndListCities"/>
           <include name="afterMethod"/>
+          <include name="checksInputTypesForCreateOrEditNewCity"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- tests.AdminCitiesTests -->

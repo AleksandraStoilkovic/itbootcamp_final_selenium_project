@@ -14,4 +14,14 @@ public class AdminCitiesTests extends BasicTest {
 		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/admin/cities", "You are not on cities page");
 		softAssert.assertAll();
 	}
+	
+	@Test(priority = 2)
+	public void checksInputTypesForCreateOrEditNewCity() {
+		navPage.getAdminButton().click();
+		navPage.getCitiesLink().click();
+		citiesPage.getNewItemButton().click();
+		citiesPage.waitForDialogForEditAndCreateBeVisible();
+		softAssert.assertEquals(citiesPage.getNameInput().getAttribute("type"), "text", "Type of name field should be text");
+		softAssert.assertAll();
+	}
 }
