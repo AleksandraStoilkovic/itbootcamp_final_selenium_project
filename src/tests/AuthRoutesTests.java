@@ -16,4 +16,16 @@ public class AuthRoutesTests extends BasicTest{
 		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/login", "You are not on login page");
 		softAssert.assertAll();
 	}
+	@Test(priority = 3)
+	public void forbidsVisitsToAdminCitiesUrlIfNotAuthenticated() {
+		driver.get(baseUrl + "/admin/cities");
+		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/login", "You are not on login page");
+		softAssert.assertAll();
+	}
+	@Test(priority = 4)
+	public void forbidsVisitsToAdminUsersUrlIfNotAuthenticated() {
+		driver.get(baseUrl + "/admin/users");
+		softAssert.assertEquals(driver.getCurrentUrl(), baseUrl + "/login", "You are not on login page");
+		softAssert.assertAll();
+	}
 }
