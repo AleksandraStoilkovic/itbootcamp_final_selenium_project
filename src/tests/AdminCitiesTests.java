@@ -39,7 +39,7 @@ public class AdminCitiesTests extends BasicTest {
 				"Message Pop Up should contain text Saved sucessfully");
 	}
 	@Test(priority = 4)
-	public void editCity() throws InterruptedException {
+	public void editCity() {
 		navPage.getAdminButton().click();
 		navPage.getCitiesLink().click();
 		citiesPage.getNewItemButton().click();
@@ -61,5 +61,20 @@ public class AdminCitiesTests extends BasicTest {
 		softAssert.assertTrue(messagePopUpPage.getElementsThatContainTextWhenWeSaveNewCity().getText().contains("Saved successfully"), 
 				"Message Pop Up should contain text Saved sucessfully");
 	}
-	
+	@Test(priority = 5)
+	public void deleteCity() {
+		navPage.getAdminButton().click();
+		navPage.getCitiesLink().click();
+		citiesPage.getSearchInput().sendKeys("Aleksandra Stoilkovic’s city Edited");
+		citiesPage.waitForSpecificNumberOfRowsToBeVisible(1);
+		softAssert.assertEquals(citiesPage.getCell(1, 2).getText(),
+				"Aleksandra Stoilkovic’s city Edited",
+				"Name column is not the same like search input");
+		citiesPage.getDeleteFromRow(1).click();
+		citiesPage.waitForDialogForDeleteBeVisible();
+		citiesPage.getDeleteButton().click();
+		messagePopUpPage.waitForPopUpCreateBeVisible();
+		softAssert.assertTrue(messagePopUpPage.getElementsThatContainTextWhenWeSaveNewCity().getText().contains("Deleted successfully"), 
+				"Message Pop Up should contain text Deleted successfully");
+	}
 }
