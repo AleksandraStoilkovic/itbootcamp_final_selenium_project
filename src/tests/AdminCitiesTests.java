@@ -37,6 +37,7 @@ public class AdminCitiesTests extends BasicTest {
 		messagePopUpPage.waitForPopUpCreateBeVisible();
 		softAssert.assertTrue(messagePopUpPage.getElementsThatContainTextWhenWeSaveNewCity().getText().contains("Saved successfully"), 
 				"Message Pop Up should contain text Saved sucessfully");
+		softAssert.assertAll();
 	}
 	@Test(priority = 4)
 	public void editCity() {
@@ -60,6 +61,7 @@ public class AdminCitiesTests extends BasicTest {
 		messagePopUpPage.waitForPopUpCreateBeVisible();
 		softAssert.assertTrue(messagePopUpPage.getElementsThatContainTextWhenWeSaveNewCity().getText().contains("Saved successfully"), 
 				"Message Pop Up should contain text Saved sucessfully");
+		softAssert.assertAll();
 	}
 	@Test(priority = 5)
 	public void deleteCity() {
@@ -76,5 +78,6 @@ public class AdminCitiesTests extends BasicTest {
 		messagePopUpPage.waitForPopUpCreateBeVisible();
 		softAssert.assertTrue(messagePopUpPage.getElementsThatContainTextWhenWeSaveNewCity().getText().contains("Deleted successfully"), 
 				"Message Pop Up should contain text Deleted successfully");
+		softAssert.assertAll();
 	}
 }
