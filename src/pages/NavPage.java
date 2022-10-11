@@ -49,7 +49,7 @@ public class NavPage {
 	}
 
 	public WebElement getLanguageButton() {
-		return driver.findElement(By.xpath("//*[text()=' en ']"));
+		return driver.findElement(By.xpath("//*[contains(@class, 'btnLocaleActivation')]/span"));
 	}
 	public WebElement getENButton() {
 		return driver.findElement(By.xpath("//*[text()='EN']"));
